@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "dark-x",
+  "version": "1.0",
+  "description": "Makes twitter-x dark",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
