@@ -1,19 +1,19 @@
-// Create a div to display 'hi there'
-const div = document.createElement('div');
-div.textContent = 'hi there';
-div.style.fontSize = '24px';
-div.style.fontWeight = 'bold';
-div.style.position = 'fixed';
-div.style.top = '0';
-div.style.left = '0';
-div.style.backgroundColor = 'yellow';
-div.style.zIndex = '9999';
-document.body.insertBefore(div, document.body.firstChild);
+// Create a div to display Dark Brandon
+const img = document.createElement('img');
+
+img.style.position = 'fixed';
+img.style.top = '0';
+img.style.left = '0';
+img.style.pointerEvents="none";
+img.style.zIndex = '9999';
+img.src = chrome.runtime.getURL('images/darkbrandon.png');
+document.body.insertBefore(img, document.body.firstChild);
 
 function setbgblack(){
     document.body.style.backgroundColor = "#000000";
     console.log("setbgblack called");
 }
+
 
 // Invert page colors
 const invertStyle = document.createElement('style');
